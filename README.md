@@ -10,7 +10,6 @@ Last update at: 2022-07-18
 library(devtools)
 install_github('gcostaneto/enviromeDB') 
 
-geographic_coordinates # data.frame: env.id, lat, lon, MM
 
 require(enviromeDB)
 require(tidyverse)
@@ -20,6 +19,9 @@ require(tidyverse)
 Usage
 
 ```{r}
+
+geographic_coordinates # data.frame: env.id, lat, lon, MM
+
 # Köppen-Geiger climate zones
 geographic_coordinates %>% getKoppenGeiger()   
 
